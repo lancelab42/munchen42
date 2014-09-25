@@ -1,0 +1,981 @@
+@font-face {
+    font-family: 'pf_agora_slab_proregular';
+    src: url('../fonts/pfagoraslabpro-regular-webfont.eot');
+    src: url('../fonts/pfagoraslabpro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pfagoraslabpro-regular-webfont.woff2') format('woff2'),
+         url('../fonts/pfagoraslabpro-regular-webfont.woff') format('woff'),
+         url('../fonts/pfagoraslabpro-regular-webfont.ttf') format('truetype'),
+         url('../fonts/pfagoraslabpro-regular-webfont.svg#pf_agora_slab_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'als_rublregular';
+    src: url('../fonts/rouble-webfont.eot');
+    src: url('../fonts/rouble-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/rouble-webfont.woff') format('woff'),
+         url('../fonts/rouble-webfont.ttf') format('truetype'),
+         url('../fonts/rouble-webfont.svg#als_rublregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lugatype';
+    src: url('../fonts/lugatype-webfont.eot');
+    src: url('../fonts/lugatype-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lugatype-webfont.woff') format('woff'),
+         url('../fonts/lugatype-webfont.ttf') format('truetype'),
+         url('../fonts/lugatype-webfont.svg#lugatyperegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ArnoProRegular';
+    src: url('../fonts/ArnoPro-Regular.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ArnoProItalicSubhead';
+    src: url('../fonts/ArnoPro-ItalicSubhead.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ArnoProSmbd';
+    src: url('../fonts/ArnoPro-Smbd.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+html,body {
+    height: 100%;
+}
+
+body {
+    font-family: Roboto, Verdana, "Geneva CY", "DejaVu Sans", sans-serif;
+    font-size: 15px;
+    background: white;
+    min-width: 960px;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.main {
+   /* min-height: 100%;*/
+}
+
+.hFooter {
+    margin-top: -58px;
+}
+
+main {
+    margin-bottom: 43px;
+    display: block;
+}
+
+.fixed + main {
+    margin-top: 52px;
+}
+
+._col4 {
+    width: 33%;
+    float: left;
+}
+
+input[type="text"]::-webkit-input-placeholder   { opacity: 1 !important; }
+input[type="text"]::-moz-input-placeholder      { opacity: 1 !important; }
+input[type="text"]:-moz-input-placeholder       { opacity: 1 !important; }
+input[type="text"]:-ms-input-placeholder        { opacity: 1 !important; }
+input[type="email"]::-webkit-input-placeholder  { opacity: 1 !important; }
+input[type="email"]::-moz-input-placeholder     { opacity: 1 !important; }
+input[type="email"]:-moz-input-placeholder      { opacity: 1 !important; }
+input[type="email"]:-ms-input-placeholder       { opacity: 1 !important; }
+input[type="search"]::-webkit-input-placeholder { opacity: 1 !important; }
+input[type="search"]::-moz-input-placeholder    { opacity: 1 !important; }
+input[type="search"]:-moz-input-placeholder     { opacity: 1 !important; }
+input[type="search"]:-ms-input-placeholder      { opacity: 1 !important; }
+
+input[type="submit"]::-moz-focus-inner{ padding:0; border:0 }
+input[type="button"]::-moz-focus-inner{ padding:0; border:0 }
+
+
+html, body {
+    background: #1b1007;
+}
+
+header {
+    background: #553c2c;
+    width: 100%;
+    height: 60px;
+    z-index: 1;
+    position: relative;
+}
+
+    header .topMenu__wrapper {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    
+    .topMenu {
+        text-align: center;
+    }
+    
+    .topMenu__item {
+        display: inline-block;
+		vertical-align: top;
+    }
+    
+    .topMenu__item a {
+        color: #aa8557;
+        text-shadow: 0px -1px 0px #070503;
+        text-decoration: none;
+        border-bottom: 1px solid currentColor;
+        -webkit-box-shadow: 0px -1px 0px #070503 inset;
+        -moz-box-shadow: 0px -1px 0px #070503 inset;
+        box-shadow: 0px -1px 0px #070503 inset;
+        margin: 10px 20px;
+        line-height: 60px;
+        -webkit-transition: all 0.2s ease 0s;
+        -moz-transition: all 0.2s ease 0s;
+        -ms-transition: all 0.2s ease 0s;
+        -o-transition: all 0.2s ease 0s;
+        transition: all 0.2s ease 0s;
+    }
+    
+    .topMenu__item a:hover {
+        color: #c29c1e;
+    }
+    
+    .topMenu__item:not(:first-child):before {
+        content: '•';
+        display: block;
+        float: left;
+        line-height: 60px;
+        color: #aa8557;
+        text-shadow: 0px -1px 0px #070503;
+        cursor: default;
+    }
+    
+.main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+body {
+    background: url('../images/top_bg.png') repeat-x;
+}
+.header {
+    position: relative;
+}
+.logo {
+    margin: 0 auto;
+    width: 378px;
+}
+
+.logo.update {
+	position: relative;
+	width: 441px;
+}
+.logo.update {
+	/*position:absolute;*/
+	top:-30px;
+}
+
+.address_block {
+    position: absolute;
+    right: 0;
+}
+
+    .address_block .tel {
+        color: #fecb23;
+        font-size: 38px;
+        font-family: Lugatype;
+    }
+    
+    .address_block .address {
+        color: #c29863;
+        font-size: 18px;
+        text-align: right;
+        font-family: ArnoProRegular;
+    }
+    
+.title_block {
+	position: absolute;
+    left: 0;
+}
+
+	.title_block .tel {
+        color: #fecb23;
+        font-size: 38px;
+        font-family: Lugatype;
+    }
+	
+.mainPage__slider {
+    position: relative;
+}
+.slider__header {
+    background: url('../images/slider/lenta.png') no-repeat;
+    background-position: center;
+    height: 200px;
+    text-align: center;
+}
+
+.slider__title {
+    color: #563a2c;
+    font-size: 38px;
+    font-family: Lugatype;
+    padding-top: 25px;
+}
+
+.slider__control {
+    margin: 35px auto;
+    display: none;
+}
+
+.slider__control ul {
+    list-style-type: none;
+}
+
+.control__item {
+    width: 0px;
+    height: 0px;
+    float: left;
+    margin-left: 10px;
+    border: 5px solid transparent; 
+    border-bottom: 9px solid #5a504b; 
+    position: relative; 
+    top: -5px;
+    cursor: pointer;
+}
+.control__item:first-child {
+    margin-left: 0;
+}
+.control__item:after { 
+    content: ''; 
+    position: absolute; 
+    left: -5px; 
+    top: 9px; 
+    width: 0; 
+    height: 0; 
+    border: 5px solid transparent; 
+    border-top: 9px solid #5a504b; 
+}
+
+.control__item:hover,
+.control__item._active{
+    border-bottom-color: #fbca24;
+}
+.control__item:hover:after,
+.control__item._active:after{
+    border-top-color: #fbca24;
+}
+
+.mainPage__slider {
+    background: url('../images/slider/table.png') no-repeat;
+    background-position: center 0;
+}
+
+.slider__content {
+    max-width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slider__content_list {
+    list-style-type: none;
+}
+
+.slider__arrow_left,
+.slider__arrow_right {
+    position: absolute;
+    top: 175px;
+    width: 59px;
+    height: 73px;
+    background: url('../images/slider/arrows.png') no-repeat;
+    cursor: pointer;
+}
+
+.slider__arrow_left:hover,
+.slider__arrow_right:hover {
+    background-position: -59px 0;
+}
+
+.slider__arrow_right {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    right: 0;
+}
+.content_list__item:not(:first-child) {
+    /*display: none;*/
+}
+
+.content_list__item {
+    max-width:960px;
+}
+
+.content_list__item .image {
+    text-align: center;
+}
+
+.content_list__item .image img {
+    margin: 0 auto 20px;
+}
+
+.content_list__item .desc {
+    width: 650px;
+    margin: 0 auto;
+}
+
+.content_list__item .desc .title {
+    font-family: Lugatype;
+    font-size: 36px;
+    color: #fdc923;
+    display: block;
+}
+
+.content_list__item .desc .price {
+    float: right;
+    font-family: Lugatype;
+    font-size: 52px;
+    color: #fdc923;
+}
+
+.content_list__item .desc .description {
+     font-family: ArnoProItalicSubhead;
+     color: #967a56;
+     font-size: 24px;
+}
+
+.content_list__item .desc .text {
+	  font-size: 20px;
+	  font-family: "Arno Pro";
+	  color: rgb( 194, 152, 99 );
+	  font-style: italic;
+	  line-height: 1.8;
+	  text-align: center;
+}
+
+.mainPage__newsBlock {
+    position: relative;
+    width: 100%;
+    background: url('../images/newsSlider/bg-middle.png') repeat;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.mainPage__newsBlock:before,
+.mainPage__newsBlock:after {
+    position: absolute;
+    background: url('../images/newsSlider/pointy_border.png') repeat-x;
+    content: '';
+    width: 100%;
+    height: 13px;
+}
+
+.mainPage__newsBlock:before {
+    top: 0;
+    z-index: 2;
+}
+
+.mainPage__newsBlock:after {
+    bottom: 0;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.newsBlock__topBg,
+.newsBlock__bottomBg{
+    height: 144px;
+    width: 100%;
+    
+    position: absolute;
+}
+
+
+.newsBlock__topBg {
+    top:0;
+    background: url('../images/newsSlider/bg-top.png') repeat-x;
+}
+
+.newsBlock__bottomBg {
+    bottom: 0;
+    background: url('../images/newsSlider/bg-bottom.png') repeat-x 2px 0;
+}
+
+.shade {
+    background: url('../images/newsSlider/shades.png') no-repeat;
+    width: 780px;
+    height: 240px;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+}
+
+.shade._right {
+    background-position: -780px 0;
+    right: -100px;
+}
+
+.shade._left {
+    left: -100px;
+}
+
+.newsBlock__slider {
+    position: relative;
+    top: 130px;
+}
+/*
+.mainPage__newsBlock .slider__title {
+    position: relative;
+}
+
+.mainPage__newsBlock .slider__title:before {
+    content: '';
+    width: 519px;
+    height: 181px;
+    background: url('../images/slider/lenta_top.png') no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+*/
+
+.newsBlock__slider .slider__arrow_left:hover,
+.newsBlock__slider .slider__arrow_right:hover {
+    background-position: -118px 0;
+}
+
+.newsBlock__slider .control__item:hover,
+.newsBlock__slider .control__item._active{
+    border-bottom-color: #1c89e7;
+}
+.newsBlock__slider .control__item:hover:after,
+.newsBlock__slider .control__item._active:after{
+    border-top-color: #1c89e7;
+}
+
+.newsBlock__slider .content_list__item .image img {
+    padding: 10px;
+    background: white;
+    -webkit-box-shadow: 0 5px 10px rgba(0,0,0, 0.5);
+    -moz-box-shadow: 0 5px 10px rgba(0,0,0, 0.5);
+    box-shadow: 0 5px 10px rgba(0,0,0, 0.5);
+}
+
+.news {
+    margin: 210px auto 150px;
+    max-width: 960px;
+    overflow: auto;
+}
+
+.news__title {
+    text-align: center;
+    font-family: Lugatype;
+    font-size: 38px;
+    color: #563a2c;
+    margin-bottom: 5px;
+}
+
+.news__item {
+    color: #563a2c;
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+.item__title {
+    font-family: ArnoProSmbd;
+}
+
+.item__anons {
+    font-family: ArnoProItalicSubhead;
+}
+
+/*-------------- content -----------------------*/
+
+/*--------About---------*/
+.content {
+    position: relative;
+	margin: 0 auto;
+    max-width: 960px;
+}
+.content__blocktext {
+    margin-bottom:50px;
+}
+
+.content__blocktext .slick-dots {
+    bottom: -26px;
+}
+.content__blocktext .content_list__item .desc {
+	text-align:center;
+}
+/*.content__header {
+    position: relative;
+	background-image: url('../images/lenta2.png');
+	background-repeat: repeat-x;
+    background-position: 0 14px;
+    height: 206px;
+    text-align: center;
+	z-index:20;
+	width:auto;
+	margin: 0 auto;
+    max-width: 320px;
+}
+.content__header:before {
+	content: ''; 
+    position: absolute; 
+	background: url('../images/lenta1.png') no-repeat;
+	top:0;
+	left:-291px;
+	z-index:10;
+    height: 206px;
+	width:291px;
+}
+.content__header:after {
+	content: ''; 
+    position: absolute; 
+	background: url('../images/lenta3.png') no-repeat;
+	top:0;
+	right:-291px;
+	z-index:10;
+    height: 206px;
+	width:291px;
+}*/
+
+.content__header {
+    position: relative;
+	background-image: url('../images/lenta_small.png');
+	background-repeat: no-repeat;
+	background-position: center top;
+    height: 186px;
+    text-align: center;
+	width:auto;
+	margin: 0 auto;
+}
+
+.content__header h2 {
+	color: #563a2c;
+	font-size: 38px;
+	font-family: Lugatype;
+	padding-top: 32px;
+}
+.content__info {
+	font-size: 18px;
+	color: rgb( 194, 152, 99 );
+	text-align: center;	
+	font-family: "Arno Pro";
+	margin-bottom:40px;
+}
+.content__info a {
+	color: rgb( 194, 152, 99 );
+}
+
+
+
+.content__team {
+	
+}
+.content__team .team__item {
+	display:inline-block;
+	margin-right:20px;
+}
+.content__team .team__item  {
+	display:inline-block;
+	margin-right:30px;
+}
+.content__team .team__item:nth-child(3n)  {
+	margin-right:0;
+}
+.content__team .team__item .image {
+	margin-bottom:25px;
+}
+.content__team .team__item .desc {
+	text-align:center;
+}
+.content__team .team__item .desc .name {
+	font-size: 24px;
+	font-family: "Lugatype";
+	color: rgb( 254, 203, 35 );
+	line-height: 1.167;
+	display: block;
+}
+.content__team .team__item .desc .description {
+	font-size: 20px;
+	font-family: "Arno Pro";
+	color: rgb( 194, 152, 99 );
+	line-height: 2;
+	font-style: italic;
+}
+/*--------/About---------*/
+
+/*--------Beer---------*/
+
+.content._beer  {
+    width: auto;
+	max-width: none;
+}
+.content._beer.content__blocktext {
+    max-width: 960px;
+}
+
+
+.content._beer .content__blocktext .slick-dots {
+    bottom: 1020px;
+}
+
+.content._beer  {
+	background-image: url('../images/table.png');
+	background-position: center 530px;
+	background-repeat: no-repeat;
+}
+.content._beer .slider__content_list .content_list__item {
+	position:relative;
+}
+.content._beer .slider__content_list .content_list__item .image {
+	
+}
+.content._beer .slider__content_list .content_list__item .image img {
+    margin: 0 135px 20px;
+}
+.content._beer .slider__content_list .content_list__item .desc {	
+	text-align: left;
+	position: absolute;
+	width: 300px;
+	top: 240px;
+	right: 110px;
+}
+.content._beer .slider__content_list .content_list__item .title {
+	font-size: 24px;
+	font-family: "Lugatype";
+	color: rgb( 254, 204, 37 );
+	text-align: center;
+	display: block;
+	width:550px;
+	margin:40px auto;
+}
+.content._beer .slider__content_list .content_list__item .desc .text {
+	font-size: 20px;
+	font-family: "Arno Pro";
+	color: rgb( 233, 209, 177 );
+	font-style: italic;
+	line-height:1.3;
+}
+
+._beer__nav {
+	
+}
+._beer__nav__item {
+	background-image: none;
+	background-repeat: no-repeat;
+	background-position: center;
+	height:279px !important;
+	/*width: 240px !important;*/
+}
+._beer__nav__item.slick-center {
+	background-image: url('../images/scobki.png');
+}
+._beer__nav__item .name {
+	font-size: 30px;
+	font-family: "Lugatype";
+	color:#967a56;
+	line-height: 1.333;
+	text-align: left;
+	display:block;
+	margin-left: 50px;
+    margin-top: 36px;
+}
+._beer__nav__item .description {
+	font-size: 20px;
+	font-family: "Arno Pro";
+	color:#967a56;
+	font-style: italic;
+	line-height: 1;
+	text-align: left;
+	display:block;
+	margin-left: 50px;
+    margin-top: 16px;
+}
+._beer__nav__item .price {
+	font-size: 52px;
+	font-family: "Lugatype";
+	color:#967a56;
+	line-height: 1.111;
+	text-align: left;
+	display:block;
+	margin-left: 50px;
+    margin-top: 16px;
+}
+._beer__nav__item .size {
+	font-size: 20px;
+	font-family: "Arno Pro";
+	color:#967a56;
+	font-style: italic;
+	line-height: 1;
+	text-align: left;
+	display:block;
+	margin-left: 50px;
+    margin-top: 10px;
+}
+._beer__nav__item.slick-center .name {
+	color: rgb( 253, 201, 35 );	
+}
+._beer__nav__item.slick-center .description {
+	color: rgb( 233, 209, 177 );	
+}
+._beer__nav__item.slick-center .price {
+	color: rgb( 253, 201, 35 );	
+}
+._beer__nav__item.slick-center .size {
+	color: rgb( 150, 122, 86 );	
+}
+
+
+
+
+/*--------/Beer---------*/
+
+
+
+
+
+/*-------------- /content -----------------------*/
+
+footer {
+    width: 100%;
+    background: url('../images/bottom_bg.png') repeat-x 0px 170px;
+    height: 430px;
+    position: relative;
+}
+
+footer .reserve {
+    top: -58px;
+}
+.reserve {
+    text-align: center;
+    position: relative;
+    max-width: 546px;
+    margin: 0 auto;
+    top: 150px;
+    text-transform: uppercase;
+}
+
+.reserve a {
+    font-family: Lugatype;
+    font-size: 34px;
+    color: #fdc923;
+    line-height: 116px;
+    display: block;
+    background: url('../images/reserve.png') no-repeat;
+    width: 546px;
+    height: 116px;
+    -webkit-transition: all 0.2s ease 0s;
+    -moz-transition: all 0.2s ease 0s;
+    -ms-transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+    text-decoration: none;
+}
+
+.reserve a span {
+    border-bottom: 1px solid currentColor;
+}
+
+.reserve a:hover {
+    color: #dbae1d;
+}
+
+.footer__content {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.addressBlock {
+    font-family: Lugatype;
+    color: #c29863;
+    float: left;
+}
+
+.addressBlock .tel {
+    font-size: 38px;
+}
+
+.addressBlock .address, 
+.addressBlock .email {
+    font-size: 18px;
+    font-family: ArnoProRegular;
+    color: #c29863;
+} 
+
+.socialBlock {
+    float: right;
+}
+
+.socialBlock span {
+    font-family: ArnoProRegular;
+    font-size: 18px;
+    color: #c29863;
+    width: 155px;
+    margin-right: 20px;
+    display: block;
+    float: left;
+}
+
+.socialBlock .enterEmail {
+    width: 90%;
+    border: 1px solid currentColor;
+    background: white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px 0px 10px 30px;
+}
+
+.mainPage__newsBlock + .mainPage__slider {
+     margin-top: -35px;   
+}
+footer.update {
+    margin-top: 120px;
+    background-position: 0 80px;
+    height: 340px;
+}
+.footer_title {
+    font-family: Lugatype;
+    color: #c29863;
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 70px;
+    position: relative;
+}
+
+.footer_title span:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('../images/venzel.png') 0 0 no-repeat;
+    width: 181px;
+    height: 54px;
+}
+.footer_title span:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('../images/venzel.png') -181px 0 no-repeat;
+    width: 181px;
+    height: 54px;
+}
+
+.topMenu__item:hover .topMenu__subMenu,
+.topMenu__subMenu:hover {
+    display: block;
+}
+
+.topMenu__subMenu {
+    display: none;
+    position: absolute;
+    background: #f7f5ee;
+    -webkit-box-shadow: 0px 5px 5px rgba(0,0,0,0.5) inset;
+    -moz-box-shadow: 0px 5px 5px rgba(0,0,0,0.5) inset;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.5) inset;
+    border-radius: 5px;
+}
+
+.topMenu__subMenu li {
+    -webkit-transition: all 0.2s ease 0s;
+    -moz-transition: all 0.2s ease 0s;
+    -ms-transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+}
+
+.topMenu__subMenu li a {
+    color: #1b1007;
+    line-height: 40px;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+.topMenu__subMenu li:hover {
+    background: #fecb23;
+}
+
+.topMenu__subMenu li:hover:first-child {
+    -webkit-box-shadow: 0px 5px 5px rgba(0,0,0,0.5) inset;
+    -moz-box-shadow: 0px 5px 5px rgba(0,0,0,0.5) inset;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.5) inset;
+}
+
+.topMenu__subMenu li a:hover {
+    color: #1b1007;
+}
+ 
+
+/* plug */
+body.plug__body {
+    background: rgb(13, 6, 3);
+}
+
+.plug__main {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main__logo {
+    margin-top: 45px;
+}
+
+.main__anons {
+    font-family: Lugatype;
+    color: #ffce25;
+    font-size: 60px;
+    margin-top: 95px;
+    display: block;
+}
+
+.main__address {
+    margin-top: 95px;
+}
+
+.address__item {
+    font-family: pf_agora_slab_proregular;
+    color: #ffffff;
+    font-size: 36px;
+}
+.item_tel {
+    font-family: pf_agora_slab_proregular;
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.plug__foodImage {
+    height: 65%;    
+    width: 100%;
+    background: url('../images/slider/table.png') no-repeat center -120px rgb(13, 6, 3);
+    text-align: center;
+}
