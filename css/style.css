@@ -763,8 +763,9 @@ body {
     width: auto;
 	max-width: none;
 }
-.content._linearfon.content__blocktext {
+.content._linearfon .content__blocktext {
     max-width: 960px;
+	margin: 0 auto;
 }
 
 
@@ -1038,8 +1039,158 @@ body {
 
 /*--------/booking---------*/
 
+/*--------cal---------*/
 
+.content._cal {
+	
+}
+.content._cal._linearfon {
+	margin-top: 0;
+	overflow:visible;
+}
+.content._cal._linearfon .slider__header{
+	top: -20px;
+	position:relative;
+	z-index:2;
+}
+.content._cal .shade._left {
+    left: -400px;
+}
+.content._cal .shade._right {
+    right: -400px;
+}
+.content._cal aside {
+	display:inline-block;
+	width:225px;
+	margin-top: 100px;
+	float: left;
+}
+.content._cal section {
+	position:relative;
+	display:inline-block;
+	max-width:700px;
+	margin-left:20px;
+	margin-bottom: 150px;
+}
+.content._cal div.news__item {
+	margin-bottom:50px;
+}
+.content._cal div.news__item h2, .content._cal aside h2 {
+	font-size: 26.76px;
+	font-family: "Lugatype";
+	color: rgb( 86, 58, 44 );
+	font-weight:normal;
+	margin-bottom:20px;
+}
+.content._cal aside h2 {
+	text-align:right;
+}
+.content._cal div.news__item p {
+	font-size: 18px;
+	font-family: "Arno Pro";
+	color: rgb( 86, 58, 44 );
+}
 
+.content._cal div.news__item  .slider__content {
+	background: #fff;
+	box-shadow: 0 4px 10px 1px #d5d2cb;
+	margin-top:30px;
+	padding:20px;
+}
+.content._cal div.news__item  .content_list__item .desc .text {
+	font-size: 18px;
+	font-family: "Arno Pro";
+	color: rgb( 27, 16, 7 );
+	line-height: 2;
+	text-align: center;
+	font-style: normal;
+}
+.content._cal .slick-dots li button:after {
+    border-color: #dbd9d5 transparent transparent !important;
+}
+.content._cal .slick-dots li button {
+	border-color: transparent transparent #dbd9d5 !important;
+}
+.content._cal .slick-dots li:hover button:after, .content._cal .slick-dots li.slick-active button:after {
+    border-top-color: #1389ee !important;
+}
+.content._cal .slick-dots li.slick-active button, .content._cal .slick-dots li:hover button {
+    border-bottom-color: #1389ee !important;
+}
+.news_mouth {
+	color: rgb(86, 58, 44);
+    display: block;
+    font-family: "Lugatype";
+    font-size: 45px;
+    margin-left: 140px;
+    position: relative;
+    width: 320px;
+}
+.news_mouth .news__item__arrow_left, .news_mouth .news__item__arrow_right {
+	background: url("../images/arrow-small.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    cursor: pointer;
+    height: 37px;
+    position: absolute;
+    top: 8px;
+    width: 30px;
+}
+.news_mouth .news__item__arrow_left {
+	left:-78px;
+}
+.news_mouth .news__item__arrow_right {
+	right: 0;
+    transform: rotate(180deg);
+}
+.news_mouth .news__item__arrow_left:hover, .news_mouth .news__item__arrow_right:hover {
+	background-position:-30px 0;
+}
+
+.datepicker__day {
+	
+}
+.datepicker__mouth {
+	font-size: 18px;
+	font-family: "Arno Pro";
+	color: rgb( 86, 58, 44 );
+	line-height: 1.667;
+	text-align: center;
+	position:relative;
+	display:block;
+}
+.datepicker__mouth .cal__arrow_left, .datepicker__mouth .cal__arrow_right {
+	background: url("../images/arrow-small.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    cursor: pointer;
+    height: 37px;
+    position: absolute;
+    top: -6px;
+    width: 30px;
+}
+.datepicker__mouth .cal__arrow_left {
+	left:0px;
+}
+.datepicker__mouth .cal__arrow_right {
+	right: 0;
+    transform: rotate(180deg);
+}
+.datepicker__mouth .cal__arrow_left:hover, .datepicker__mouth .cal__arrow_right:hover {
+	background-position:-30px 0;
+}
+.datepicker__day div {
+	font-size: 18px;
+	font-family: "Arno Pro";
+	color: #967a56;
+	line-height: 1.667;
+	text-align: center;
+	display:inline-block;
+	width: 20px;
+	height:20px;
+	margin:6px;
+}
+.datepicker__day div a {
+	color:#563a2c;
+}
+
+/*--------/cal---------*/
 
 /*-------------- /content -----------------------*/
 
